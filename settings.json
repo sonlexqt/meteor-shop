@@ -1,7 +1,7 @@
 {
-  "stripeSecretKey": "STRIPE SECRET",
+  "stripeSecretKey": "sk_test_3OVMppJG7dKDC7jZowXypVAp",
   "public": {
-    "stripePublicKey": "STRIPE PUBLIC"
+    "stripePublicKey": "pk_test_rKJO8FZlZClcOIUEK9jrfprb"
   },
   "salesDB" : {
     "connectionString" : "postgresql://user:password@localhost/DBNAME"
