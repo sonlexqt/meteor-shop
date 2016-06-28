@@ -45,9 +45,10 @@ CheckoutViewModel = function(args){
 
   //submission
   this.loadStripeCheckout = function(){
-
+    // TODO XIN
+    console.log('loadStripeCheckout');
+    console.log('key: ' + Meteor.settings.public.stripePublicKey);
     var handler = StripeCheckout.configure({
-      //should be set in settings
       key: Meteor.settings.public.stripePublicKey,
       image: '/images/logo-small.png',
       zipCode : true,
@@ -57,7 +58,8 @@ CheckoutViewModel = function(args){
       token: handleToken
     });
 
-
+    //
+    console.log('handler.open');
     handler.open({
       name: 'The Rocket Shop',
       description: checkoutModel.description(),
@@ -99,6 +101,8 @@ CheckoutViewModel = function(args){
     };
 
     //call to processCharge
+    // TODO XIN
+    console.log('call to processCharge');
     processPayment(checkout,function(err,res){
       if(res.success){
         //console.log(res);
