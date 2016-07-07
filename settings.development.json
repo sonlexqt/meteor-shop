@@ -1,9 +1,0 @@
-{
-  "stripeSecretKey": "sk_test_tTv7Sbhr0yLFTLXcK3xE4lqz",
-  "public": {
-    "stripePublicKey": "pk_test_TWL4kcwrg7d33TU9XzIoV5Pm"
-  },
-  "salesDB" : {
-    "connectionString" : "postgresql://sonle:dsv123@localhost/meteor_meetup"
-  }
-}
