@@ -1,5 +1,6 @@
 Meteor.startup(function(){
-
+  // TODO XIN
+  console.log('* Initializing StripeWrapper ...');
   var StripeWrapper = function(){
     this.runCharge = function(checkout){
       var stripe = Meteor.npmRequire("stripe")(Meteor.settings.stripeSecretKey);
@@ -11,8 +12,14 @@ Meteor.startup(function(){
           source: checkout.token.id,
           description: checkout.description
         };
+        // TODO XIN
+        console.log('* charge');
+        console.log(charge);
         stripe.charges.create(charge, done);
       });
+      // TODO XIN
+      console.log('* stripeCall.result');
+      console.log(stripeCall.result);
       return stripeCall.result;
     };
 
