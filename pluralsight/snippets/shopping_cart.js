@@ -1,8 +1,5 @@
 if(Meteor.isClient){
 
-
-  //the cart relies on this global key, which could be a problem!
-  //refactor as you see fit!
   userKey = localStorage.getItem("user_key");
   if(!userKey){
     userKey = Meteor.uuid();
@@ -19,8 +16,8 @@ if(Meteor.isClient){
   removeFromCart = function (sku, callback) {
     Meteor.call('removeFromCart',userKey, sku, callback);
   };
-  updateCart = function (sku, quantity, callback) {
-    Meteor.call('updateCart', userKey, sku, quantity, callback);
+  saveCart = function (cart, callback) {
+    Meteor.call('saveCart',userKey, cart, callback);
   };
 }
 
@@ -28,29 +25,11 @@ if(Meteor.isServer){
   Meteor.methods({
     //getcart
     getCart : function(userKey){
-      check(userKey, String);
       return Carts.getCart(userKey);
     },
-    updateCart : function(userKey,sku, quantity){
-      check(userKey, String);
-      check(sku, String);
-      check(quantity, Match.Where(function(quantity) {
-        check(quantity, Number);
-        return quantity >= 0;
-      }));
-      var cart = Meteor.call("getCart", userKey);
-      //only update the quantity here
-      _.each(cart.items, function(item){
-        if(item.sku === sku){
-          item.quantity = quantity;
-          return Meteor.call("saveCart", cart);
-        }
-      });
-    },
+
     //addToCart
     addToCart : function(userKey, sku){
-      check(userKey, String);
-      check(sku, String);
       var cart = Meteor.call("getCart", userKey);
       //get the item in the cart
       var found = _.find(cart.items, function(item){
@@ -85,8 +64,6 @@ if(Meteor.isServer){
     },
     //removeFromCart
     removeFromCart : function(userKey, sku){
-      check(userKey, String);
-      check(sku, String);
       var cart = Meteor.call("getCart", userKey);
       //get the item in the cart
 
@@ -108,35 +85,9 @@ if(Meteor.isServer){
     },
 
     saveCart : function(cart){
-      check(cart, Match.ObjectIncluding({
-        userKey: String,
-        items: [Match.ObjectIncluding({
-          sku: String
-        })]
-      }));
-
-      var products = Products.find({
-        sku: {$in: _.pluck(cart.items, 'sku')}
-      }).fetch();
-
-      var skuMap = _.object(_.pluck(products, 'sku'), products);
-
       cart.updated_at = new Date();
-      cart.total = 0;
-      if (Meteor.user() && Meteor.user().emails && Meteor.user().emails[0].address){
-        cart.email = Meteor.user().emails[0].address;
-      }
-      if (Meteor.user() && Meteor.user().profile && Meteor.user().profile.name){
-        cart.name = Meteor.user().profile.name;
-      }
-      if (Meteor.user() && Meteor.user().profile && Meteor.user().profile.ip){
-        cart.ip = Meteor.user().profile.ip;
-      }
       var counter = 0;
       _.each(cart.items, function(item){
-        item.price = skuMap[item.sku].price;
-        item.quantity = Math.max(0, item.quantity);
-        // TODO: Don't trust discount from client
         item.lineTotal = (item.price - item.discount) * item.quantity;
         cart.total+=item.lineTotal;
         counter++;
@@ -147,7 +98,6 @@ if(Meteor.isServer){
     },
 
     emptyCart : function(userKey){
-      check(userKey, String);
       Carts.remove({userKey : userKey});
     }
   });
