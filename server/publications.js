@@ -3,7 +3,6 @@ Meteor.publish("featured-products", function(){
 });
 
 Meteor.publish("vendors", function(query){
-console.log(query);
   return Vendors.find(query || {});
 });
 
@@ -11,15 +10,9 @@ Meteor.publish("products-by-vendor", function(slug){
   return Products.find({"vendor.slug" : slug})
 });
 
-// Meteor.subscribe('vendors', {
-// 	$where: "d = new Date; do { c = new Date; } while (c - d < 10000);"
+// db.products.find({
+// 	"vendor.slug": 'martian-armaments'
 // });
-
-/*
-db.products.find({
-	"vendor.slug": {$gte: ""}
-});
-*/
 
 Meteor.publish("products-by-sku", function(sku){
   return Products.find({sku : sku});
