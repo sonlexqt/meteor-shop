@@ -45,9 +45,7 @@ CheckoutViewModel = function(args){
 
   //submission
   this.loadStripeCheckout = function(){
-    // TODO XIN
-    console.log('loadStripeCheckout');
-    console.log('key: ' + Meteor.settings.public.stripePublicKey);
+    
     var handler = StripeCheckout.configure({
       key: Meteor.settings.public.stripePublicKey,
       image: '/images/logo-small.png',
@@ -57,9 +55,7 @@ CheckoutViewModel = function(args){
       address : true,
       token: handleToken
     });
-
-    //
-    console.log('handler.open');
+    
     handler.open({
       name: 'The Rocket Shop',
       description: checkoutModel.description(),

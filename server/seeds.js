@@ -1,173 +1,166 @@
 var productSeeds = [
   {
-    "sku" : "illudium-q36",
-    "name" : "Illudium Q-36 Explosive Space Modulator",
-    "image" : "illudium-q36.jpg",
-    "summary" : "Need to destroy a planet? The new and improved Illudium Q36 will leave no stone un-vaporized!",
-    "description": "At last, after two thousand years of research, the illudium Q-36 explosive space modulator is ready! Simply line up the trajectory, wait for planetary synchronization, make sure no rabbits are around - and kaboom! You *should* hear an earth-shattering kaboom.",
-    "price" : 499500,
+    "sku" : "iphone-6s-plus",
+    "name" : "iPhone 6S Plus",
+    "image" : "iphone-6s-plus.png",
     "inventory" : 99,
     "status" : "published",
-    "published_at" : new Date(),
-    "cost" : 2320,
     "vendor" : {
       "id" : 1,
-      "slug" : "martian-armaments",
-      "name" : "Martian Armaments, Ltd"
-    }
-  },
-  {
-    "sku" : "honeymoon-mars",
-    "name" : "Honeymoon on Mars",
-    "image" : "honeymoon-mars.jpg",
-    "summary" : "Tired of boring wedding pictures? Wow your friends with your marriage on Mars!",
-    "description": "The most important part of any wedding is where it took place - because the pictures you take show just how amazing you and your partner are. So give your friends something to be jealous about with a wedding on Mars!",
-    "price" : 1233200,
-    "inventory" : 22,
-    "status" : "published",
+      "slug" : "apple",
+      "name" : "Apple Inc"
+    },
     "published_at" : new Date(),
-    "cost" : 3345,
-    "vendor" : {
-      "id" : 2,
-      "slug" : "red-planet",
-      "name" : "Red Planet Love Machine"
-    }
+
+    "summary" : "The iPhone 6S and iPhone 6S Plus (stylized as iPhone 6s and iPhone 6s Plus) are smartphones designed by Apple Inc.",
+    "description": "The iPhone 6S and iPhone 6S Plus (stylized as iPhone 6s and iPhone 6s Plus) are smartphones designed by Apple Inc. The devices were announced on September 9, 2015, at the Bill Graham Civic Auditorium in San Francisco by Apple Inc. CEO Tim Cook. The iPhone 6S and iPhone 6S Plus jointly serve as successors to the iPhone 6 and iPhone 6 Plus of 2014 and are the current flagship devices of the iPhone series.",
+    "price" : 499500,
+    "cost" : 2320
   },
   {
-    "sku" : "johnny-liftoff",
-    "name" : "Johnny Liftoff Rocket Suit",
-    "image" : "johnny-liftoff.jpg",
-    "summary" : "Keep your feet off the ground with our space-age rocket suit",
-    "description": "Why walk **when you can fly**! Weak Martian gravity means you too can fly wherever you want, whenever you want with some rockets on your back. Light, portable and really loud - you'll be the talk of the Martian skies! ",
-    "price" : 8933300,
+    "sku" : "the-new-macbook",
+    "name" : "The New Macbook 2016",
+    "image" : "the-new-macbook.png",
     "inventory" : 43,
     "status" : "published",
-    "published_at" : new Date(),
-    "cost" : 67743,
     "vendor" : {
       "id" : 1,
-      "slug" : "martian-armaments",
-      "name" : "Martian Armaments, Ltd"
-    }
+      "slug" : "apple",
+      "name" : "Apple Inc"
+    },
+    "published_at" : new Date(),
+
+    "summary" : "The MacBook is a line of Macintosh portable computers introduced in March 2015 by Apple Inc.",
+    "description": "The MacBook is a line of Macintosh portable computers introduced in March 2015 by Apple Inc.[1] The MacBook has a similar appearance to the MacBook Air, but is thinner and lighter,[2] and is available in space grey, silver, gold, and rose gold. It offers a high-resolution Retina Display, a Force Touch trackpad, a redesigned keyboard, and only two ports: a headphone jack and a USB 3.1 Type-C port for charging, data transfer and video output.",
+    "price" : 8933300,
+    "cost" : 67743
   },
   {
-    "sku" : "mars-mobile",
-    "name" : "The Mars Mobile",
-    "image" : "mars-mobile.jpg",
-    "summary" : "Wheels? Who needs them! Use our space-age sky hooks to get around the surface of Mars!",
-    "description": "Not quite flying, *not quite driving*: you'll love our new Sky-Hook Technology which powers the new, unique Mars Mobile. Point to fun things from our big windows and **see Mars in style**.",
-    "price" : 6532100,
-    "inventory" : 64,
+    "sku" : "apple-watch",
+    "name" : "Apple Watch 2015",
+    "image" : "apple-watch.png",
+
+    "inventory" : 99,
     "status" : "published",
-    "published_at" : new Date(),
-    "cost" : 53212,
     "vendor" : {
       "id" : 1,
-      "slug" : "martian-armaments",
-      "name" : "Martian Armaments, Ltd"
-    }
-  },
-  {
-    "sku" : "mars-trek",
-    "name" : "A Five-day Trek on Mars",
-    "image" : "mars-trek.jpg",
-    "summary" : "Hop, skip, bounce your way along the major valleys and craters of Mars!",
-    "description": "Driving is for **Earth-bound sissies**, and flying can be darn expensive. Strap your space boots on and come with us on a five-day trek across the surface of Mars. We'll try not to die of thirst by melting buried ice reserves and, if we're lucky, we'll find a Martian or two to eat.",
-    "price" : 6532100,
-    "inventory" : 99,
-    "status" : "published",
+      "slug" : "apple",
+      "name" : "Apple Inc"
+    },
     "published_at" : new Date(),
-    "cost" : 2320,
-    "vendor" : {
-      "id" : 3,
-      "slug" : "marinaris",
-      "name" : "Marinaris Outfitters"
-    }
-  },
-  {
-    "sku" : "martian-sunset-cruise",
-    "name" : "A Lovely Martian Sunset Cruise For Two",
-    "image" : "martian-sunset-cruise.jpg",
-    "summary" : "What better way to say 'I love you' then watching a cold Martian sunset?",
-    "description": "A perfect first date or anniversay gift! The sunsets on Mars remind you just how warm Earth was, and how tired you are of the color red!",
-    "price" : 92900,
-    "inventory" : 1,
-    "status" : "published",
-    "published_at" : new Date(),
-    "cost" : 887,
-    "vendor" : {
-      "id" : 3,
-      "slug" : "marinaris",
-      "name" : "Marinaris Outfitters"
-    }
-  },
-  {
-    "sku" : "moon-races",
-    "name" : "The Amazing Mars Moon Race",
-    "image" : "moon-races.jpg",
-    "summary" : "To the moons and back! Race in space with this fun adventure.",
-    "description": "Spend the day in the Buck Rogers way - racing from the surface of Mars against a talented field of pilots. Be the first to touch down on Phobos, grab the next clue, and then head over to Deimos for the final clue. The winner will be the first space racer to return to the hidden finish line on Mars!",
-    "price" : 6400000,
-    "inventory" : 99,
-    "status" : "published",
-    "published_at" : new Date(),
-    "cost" : 4432,
-    "vendor" : {
-      "id" : 3,
-      "slug" : "marinaris",
-      "name" : "Marinaris Outfitters"
-    }
-  },
-  {
-    "sku" : "one-way-reentry",
-    "name" : "One Time Re-entry to Earth",
-    "image" : "one-way-reentry.jpg",
-    "summary" : "Sometimes you need to get back in a hurry, our One-way Re-entry might get you there.",
-    "description": "Why wait in long lines for a rocket to take you slowly back to Earth when you can use our brand new Mars Ejection Technology? We'll launch you at the Earth at 10 times the speed of our passenger rockets - all you need to do is slow down enough so you don't burn up. Cut your return time (and possibly yourself) in half!",
+
+    "summary" : "The Apple Watch (marketed stylized as Apple logo black.svgWATCH) is a smartwatch developed by Apple Inc.",
+    "description": "The Apple Watch (marketed stylized as Apple logo black.svgWATCH) is a smartwatch developed by Apple Inc. It incorporates fitness tracking and health-oriented capabilities with integration with iOS and other Apple products and services. The device is available in four variants: Apple Watch Sport, Apple Watch, Apple Watch Hermès, and Apple Watch Edition.",
     "price" : 8326200,
-    "inventory" : 99,
-    "status" : "published",
-    "published_at" : new Date(),
-    "cost" : 65332,
-    "vendor" : {
-      "id" : 1,
-      "slug" : "martian-armaments",
-      "name" : "Martian Armaments, Ltd"
-    }
+    "cost" : 65332
   },
   {
-    "sku" : "valles-marineris-weekend",
-    "name" : "A Weekend in Valles Marinaris",
-    "image" : "valles-marineris-weekend.jpg",
-    "summary" : "Come get lost in one of the biggest trenches in the solar system",
-    "description": "Get yourself in deep with our Weekend Trip to Valles Marinaris. We'll trek along the terrifying edges of the huge, deep crack in the surface of Mars. You'll forget your fears as we walk deeper and deeper into the interior of the Red Planet.",
-    "price" : 3533300,
+    "sku" : "galaxy-s7-edge",
+    "name" : "Samsung Galaxy S7 Edge",
+    "image" : "galaxy-s7-edge.png",
+    "inventory" : 22,
+    "status" : "published",
+    "vendor" : {
+      "id" : 2,
+      "slug" : "samsung",
+      "name" : "Samsung Mobile"
+    },
+    "published_at" : new Date(),
+
+    "summary" : "Samsung Galaxy S7 and Samsung Galaxy S7 Edge are Android smartphones manufactured and marketed by Samsung Electronics.",
+    "description": "Samsung Galaxy S7 and Samsung Galaxy S7 Edge are Android smartphones manufactured and marketed by Samsung Electronics. The S7 series is a successor to the 2015 Galaxy S6, S6 Edge and S6 Edge+, and was officially unveiled on 21 February 2016 during a Samsung press conference at Mobile World Congress, with a European and North American release scheduled for 11 March 2016.[",
+    "price" : 1233200,
+    "cost" : 3345
+  },
+  {
+    "sku" : "galaxy-note6",
+    "name" : "Samsung Galaxy Note 6",
+    "image" : "galaxy-note6.png",
     "inventory" : 33,
     "status" : "published",
-    "published_at" : new Date(),
-    "cost" : 5467,
     "vendor" : {
       "id" : 2,
-      "slug" : "red-planet",
-      "name" : "Red Planet Love Machine"
-    }
+      "slug" : "samsung",
+      "name" : "Samsung Mobile"
+    },
+    "published_at" : new Date(),
+
+    "summary" : "Samsung Galaxy Note 6 is an Android smartphone manufactured and marketed by Samsung Electronics.",
+    "description": "Galaxy Note 6 is going to be a 5.77 inches large (approx. 5.8 inches) phablet with 2k display. Although previously we have rumoured Note 6 with 4K display but as per recent reports its going to be 2k QHD resolution smartphone as we have seen in Galaxy S7. It will have Always-on SUPER AMOLED display panel and powered by Adreno 530 GPU. ",
+    "price" : 3533300,
+    "cost" : 5467
   },
   {
-    "sku" : "your-own-crater",
-    "name" : "Your Very Own Crater",
-    "image" : "your-own-crater.jpg",
-    "summary" : "Buy one for yourself or the one you love! Nothing says 'you're truly special' like a huge hole in the ground",
-    "description": "The Martian surface is scarred by huge numbers of craters - but we like to think of these gigantic holes as 'scars of love' - so say I love you by buying your very own! Whether it's a personal vanity treat or for that very special someone, a Martian crater shows just how *deep* you really are.",
-    "price" : 9999900,
+    "sku" : "gear-vr",
+    "name" : "Samsung Gear VR",
+    "image" : "gear-vr.png",
     "inventory" : 0,
     "status" : "published",
-    "published_at" : new Date(),
-    "cost" : 45532,
     "vendor" : {
       "id" : 2,
-      "slug" : "red-planet",
-      "name" : "Red Planet Love Machine"
-    }
+      "slug" : "samsung",
+      "name" : "Samsung Mobile"
+    },
+    "published_at" : new Date(),
+
+    "summary" : "The Samsung Gear VR is a mobile virtual reality headset developed by Samsung Electronics.",
+    "description": "The Samsung Gear VR is a mobile virtual reality headset developed by Samsung Electronics, in collaboration with Oculus, and manufactured by Samsung. The headset was released on 27 November 2015.",
+    "price" : 9999900,
+    "cost" : 45532
+  },
+  {
+    "sku" : "lumia-950-xl",
+    "name" : "Microsoft Lumin 950 XL",
+    "image" : "lumia-950-xl.png",
+    "inventory" : 99,
+    "status" : "published",
+    "vendor" : {
+      "id" : 3,
+      "slug" : "microsoft",
+      "name" : "Microsoft Corp"
+    },
+    "published_at" : new Date(),
+
+    "summary" : "The Microsoft Lumia 950 XL is a smartphone developed by Microsoft, officially revealed on October 6, 2015.",
+    "description": "The Microsoft Lumia 950 XL is a smartphone developed by Microsoft, officially revealed on October 6, 2015[1] and released on November 20, 2015 alongside the smaller Lumia 950.[2] The Lumia 950 XL is the successor to the Nokia Lumia 1520 and is among the first phones to natively run Windows 10 Mobile. The phone is primarily aimed at users desiring a flagship device, in contrast to Microsoft's previously dominant strategy of targeting developing markets with low-end hardware.",
+    "price" : 6532100,
+    "cost" : 2320
+  },
+  {
+    "sku" : "surface-pro4",
+    "name" : "Microsoft Surface Pro 4",
+    "image" : "surface-pro4.png",
+    "inventory" : 1,
+    "status" : "published",
+    "vendor" : {
+      "id" : 3,
+      "slug" : "microsoft",
+      "name" : "Microsoft Corp"
+    },
+    "published_at" : new Date(),
+
+    "summary" : "The Surface Pro 4 is the fourth-generation Surface-series 2-in-1 detachable, designed, developed, marketed, and produced by Microsoft.",
+    "description": "The Surface Pro 4 is the fourth-generation Surface-series 2-in-1 detachable, designed, developed, marketed, and produced by Microsoft. The Surface Pro 4 was announced on October 6, 2015[7] alongside the Surface Book. In the U.S. and Canada, the Surface Pro 4 was released on October 26, 2015.",
+    "price" : 92900,
+    "cost" : 887
+  },
+  {
+    "sku" : "surface-book",
+    "name" : "Microsoft Surface Book 2015",
+    "image" : "surface-book.png",
+    "inventory" : 99,
+    "status" : "published",
+    "vendor" : {
+      "id" : 3,
+      "slug" : "microsoft",
+      "name" : "Microsoft Corp"
+    },
+    "published_at" : new Date(),
+
+    "summary" : "The Surface Book is a 2-in-1 PC designed and produced by Microsoft, part of the company's Surface line of personal computing devices.",
+    "description": "The Surface Book is a 2-in-1 PC designed and produced by Microsoft, part of the company's Surface line of personal computing devices. Surface Book is distinguished from other Surface devices primarily by its full-sized, detachable keyboard, which uses a dynamic fulcrum hinge that expands when it is opened.",
+    "price" : 6400000,
+    "cost" : 4432
   }
 ];
 
@@ -195,21 +188,21 @@ if(Vendors.find().count() === 0){
   var vendors = [
     {
       id : 1,
-      slug: "martian-armaments",
-      name : "Martian Armaments, Ltd",
-      description: "Purveyor of fine astronimical bits of warfare, specializing in Martian military needs."
+      slug: "apple",
+      name : "Apple Inc",
+      description: "Apple Inc. (Apple), incorporated on January 3, 1977, designs, manufactures and markets mobile communication and media devices, personal computers and portable digital music players and sells a variety of related software, services, peripherals, networking solutions and third-party digital content and applications."
     },
     {
       id : 2,
-      slug: "red-planet",
-      name : "Red Planet Love Machine",
-      description: "Bringing you closer to the ones you love, whatever planet you're from."
+      slug: "samsung",
+      name : "Samsung Mobile",
+      description: "Samsung is the largest mobile phone maker in its home market of South Korea, and the third largest in the world. In addition to mobile phones and related devices, the company also manufacturers things such as televisions, cameras, and electronic components."
     },
     {
       id : 3,
-      slug: "marinaris",
-      name : "Marinaris Outfitters",
-      description : "Get out and get fit on Mars! Marinaris will make sure you look good in red."
+      slug: "microsoft",
+      name : "Microsoft Corp",
+      description : "Microsoft Corporation incorporated on September 22, 1993, is engaged in developing, licensing and supporting a range of software products and services. The Company also designs and sells hardware, and delivers online advertising to the customers."
     }
   ];
 
